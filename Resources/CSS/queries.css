@@ -1,0 +1,50 @@
+/* @media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+} */
+
+/* Small phones to small tablet from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 58%;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    gap: 2rem;
+    margin-right: -7rem;
+    margin-top: 2rem;
+  }
+
+  .icon {
+    font-size: 4rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-pics {
+    max-width: 15rem;
+
+    margin-top: -31px;
+    align-self: center;
+  }
+
+  .resume {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

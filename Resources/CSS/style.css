@@ -1,0 +1,301 @@
+/*----------------------------------*/
+/* BASIC SETUP*/
+/*----------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  color: #555;
+}
+
+/* .row {
+  max-width: 50rem;
+  margin: 0 auto;
+} */
+
+/*----------------------------------*/
+/* REUSABLE COMPONENTS*/
+/*----------------------------------*/
+.container {
+  max-width: 120rem;
+  padding: 2rem 5.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .row {
+  max-width: 120rem;
+  margin: 0 auto;
+} */
+
+section {
+  padding: 1rem;
+}
+
+/* .box {
+  padding: 1%;
+} */
+
+p {
+  font-size: 1.82rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+i {
+  color: #cf6d17;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/*---------HEADINGS--------*/
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 3rem;
+  word-spacing: 4px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.5rem;
+  word-spacing: 2px;
+  text-align: center;
+  margin: 1rem 2rem;
+
+  margin-bottom: 0rem;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 3rem;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #e67e22;
+  text-align: center;
+}
+
+/*--------- ICONS--------*/
+
+/*---------BUTTONS--------*/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #cf6d17;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 1rem 1.7rem;
+  border-radius: 9px;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: #e67e22;
+}
+
+/*----------------------------------*/
+/* HEADER*/
+/*----------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(29, 24, 13, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero-text-box {
+  position: absolute;
+  max-width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  color: #e67e22;
+}
+
+/* Main navi */
+.header-nav {
+  padding: 1.4rem 10rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  height: 9.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #cf6d17;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+/*----------------------------------*/
+/* ABOUT */
+/*----------------------------------*/
+
+.about {
+  background-color: #fff;
+}
+
+.about-pics {
+  max-width: 25rem;
+
+  margin-top: -25px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  align-self: center;
+}
+
+.resume-btn:link,
+.resume-btn:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 1rem 1.7rem;
+  border-radius: 9px;
+  margin-right: 15px;
+}
+
+.resume-btn:hover,
+.resume-btn:active {
+  background-color: #cf6d17;
+}
+
+.resume-btn {
+  border: 1px solid #cf6d17;
+}
+
+.resume {
+  text-align: left;
+  margin-top: 2rem;
+}
+/*----------------------------------*/
+/* CONTACT */
+/*----------------------------------*/
+
+.contact {
+  background-color: #f4f4f4;
+}
+
+.skills p {
+  text-align: center;
+  margin: 3rem;
+}
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.fill input {
+  padding: 6px;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: thin;
+  background-color: #f4f4f4;
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  background-color: #cf6d17;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 1rem 1.7rem;
+  border-radius: 9px;
+}
+
+input[type="submit"] {
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+input[type="submit"] {
+  border: 1px solid #cf6d17;
+}
+
+.submit {
+  text-align: center;
+}
+
+/*----------------------------------*/
+/* FOOTER */
+/*----------------------------------*/
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 1rem;
+}
+
+.sponsors img {
+  height: 5rem;
+  max-width: 5rem;
+  border-radius: 50%;
+}
+
+footer {
+  color: #888;
+  text-align: center;
+
+  padding: 1rem;
+}
